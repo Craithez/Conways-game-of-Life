@@ -1,0 +1,69 @@
+/* import Roboto 400 + 700*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Board {
+    position: relative;
+    margin: 0 auto;
+    background-color: #000;
+    background-image:
+        linear-gradient(#333 1px, transparent 1px),
+        linear-gradient(90deg, #333 1px, transparent 1px);
+}
+
+.Cell {
+    background: #ccc;
+    position: absolute;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.button {
+    margin-left: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 24px;
+    font-weight: 700;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  /* Button-shine effect*/
+
+
+  .button:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    color: black;
+    background-color: darkslateblue;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .button:hover:before {
+    left: 100%;
+  }
